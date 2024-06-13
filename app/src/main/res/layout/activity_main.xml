@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Search View -->
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for a mechanic" />
+
+    <!--    &lt;!&ndash; Profile Icon &ndash;&gt;-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/profile_icon"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="end"-->
+    <!--        android:src="@drawable/ic_profil" />-->
+
+    <!-- Mechanic Cards -->
+    <TextView
+        android:id="@+id/categories_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Categories"
+        android:textSize="18sp" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:columnCount="2">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="75dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_extrabold"
+                    android:text="AG"
+                    android:textAlignment="center"
+                    android:textSize="40sp" />
+
+
+            <!-- Mechanic Card Content -->
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="75dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Bajaj"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+
+            <!-- Mechanic Card Content -->
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                app:cardCornerRadius="75dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_extrabold"
+                    android:text="TVS"
+                    android:textAlignment="center"
+                    android:textSize="40sp" />
+                <!-- Mechanic Card Content -->
+
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="75dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Honda"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+            <!-- Mechanic Card Content -->
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="75dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Hunter"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+            <!-- Mechanic Card Content -->
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="75dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Scooter"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+            <!-- Mechanic Card Content -->
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/other_services_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Services"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Other Services List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/other_services_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav_menu"/>
+        <!--        app:itemIconTint="@color/bottom_nav_icon_color"-->
+        <!--        app:itemTextColor="@color/bottom_nav_text_color"-->
+        <!--        app:itemBackground="@color/bottom_nav_background_color"/>-->
+    </LinearLayout>
+
+</LinearLayout>
